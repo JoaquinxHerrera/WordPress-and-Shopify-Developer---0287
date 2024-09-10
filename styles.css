@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.red{
+    color: #ab3c3c;
+}
+
+.darkBlue{
+    color:  #314b57;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.section1{
+    background-color: #314b57;
+    padding: 0 15%;
+    justify-content: space-between;
+}
+
+.section1 a{
+    text-decoration: none;
+}
+
+.section1-left{
+    width: 65%;
+}
+
+.section1-right{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.section1 h1{
+    font-family: Roboto Slab;
+    color: #FFFEFF;
+    margin-bottom: 0.5em;
+}
+
+.section1 p{
+    font-family: Roboto Slab;
+    color: #FFFEFF;
+    margin-top: 0.6em;
+}
+
+.section2{
+    padding: 0 15%;
+    margin-top: 1em;
+    margin-bottom: 4.5em;
+}
+
+.section2 h1{
+    font-family: Roboto Slab;
+    color: #ab3c3c;
+    font-size: 3.6rem;
+}
+
+.section2 img{
+    margin-right: 2em;
+    width: 160%;
+}
+
+.section2 p{
+    line-height: 28px;
+    font-size: 1.1rem;
+}
+.sec2-links{
+    gap:10px;
+    margin-bottom: 10px;
+}
+
+.sec2-links a{
+    text-decoration: none;
+}
+
+.section2 a{
+    font-size: 1.1rem;
+}
+
+.section3{
+    padding: 0 15%;
+   
+}
+
+.section3 h1{
+    font-family: Roboto Slab;
+    color: #ab3c3c;
+    font-size: 2.75rem;
+    margin-bottom: 0.5em;
+}
+
+.cards{
+    justify-content: space-between;
+    gap: 3em;
+}
+
+.card{
+    width: 100%;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card p{
+    color: #314b57;
+    line-height: 28px;
+    margin-bottom: 1.5em;
+}
+
+.card a{
+    color: #ab3c3c;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 1024px) {
+    
+    .section1, .section2, .section3 {
+        flex-direction: column;
+    }
+
+    .section2, .content{
+        flex-direction: column;
+    
+    }
+
+    .section1-left, .section1-right {
+        width: 100%;
+    }
+
+    .section1 img, .section2 img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .section1 h1, .section2 h1, .section3 h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .section1 .space-between {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+}
